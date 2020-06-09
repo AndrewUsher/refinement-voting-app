@@ -8,13 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
-    "firebase": "^7.15.0",
+    "firebase": "7.15.0",
     "next": "9.4.4",
-    "react": "^0.0.0-experimental-33c3af284",
-    "react-dom": "^0.0.0-experimental-33c3af284",
-    "reactfire": "^2.0.3"
+    "react": "0.0.0-experimental-33c3af284",
+    "react-dom": "0.0.0-experimental-33c3af284",
+    "reactfire": "2.0.3"
   },
   "devDependencies": {
-    "@drewster/eslint-config": "^1.0.2"
+    "@drewster/eslint-config": "1.0.2"
   }
 }
