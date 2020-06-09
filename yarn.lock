@@ -1008,7 +1008,7 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@drewster/eslint-config@^1.0.2":
+"@drewster/eslint-config@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@drewster/eslint-config/-/eslint-config-1.0.2.tgz#f44dbd3c5c395a5c341f28b64a2fad44a3a76908"
   integrity sha512-j+HhYTcn9As/674M3Kas7gx95CswailJ/mVOwuVpzgVKrXLrpyiEHPIPcCZyaMOJaq16FTCNaGCUb42bJ9BPsg==
@@ -3168,7 +3168,7 @@ find-up@^4.0.0:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
 
-firebase@^7.15.0:
+firebase@7.15.0:
   version "7.15.0"
   resolved "https://registry.yarnpkg.com/firebase/-/firebase-7.15.0.tgz#8c80b59ef28eb36c699fa32f6a0e63cd74274c00"
   integrity sha512-0t8w/TT+230/n/XWBw9jGMApCkIEb5K1b+6t4R+SAMOZHMJZvoAwMcwgQXoYeUBFOJOQpgDhIZK8PzApq4iUXw==
@@ -5223,7 +5223,7 @@ randomfill@^1.0.3:
     randombytes "^2.0.5"
     safe-buffer "^5.1.0"
 
-react-dom@^0.0.0-experimental-33c3af284:
+react-dom@0.0.0-experimental-33c3af284:
   version "0.0.0-experimental-33c3af284"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-0.0.0-experimental-33c3af284.tgz#d4acd21209a299832d9233ceafc25a6fe1b1d076"
   integrity sha512-z1/EQD8iKjqkRRd/lEs6oh4FNcS9tPmO91219w4UlLhP0g28wTWClJOYDEnKgQh2nJeZQ5MlBDECIRZYwrZp5A==
@@ -5242,7 +5242,7 @@ react-refresh@0.8.3:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
-react@^0.0.0-experimental-33c3af284:
+react@0.0.0-experimental-33c3af284:
   version "0.0.0-experimental-33c3af284"
   resolved "https://registry.yarnpkg.com/react/-/react-0.0.0-experimental-33c3af284.tgz#63842e46a441e4d5a8a5623a21791973196e8bbf"
   integrity sha512-dk0eQhyiA05TYtSWShwfl4vxlJAOrwNLtESbWxM6O06Xn0nuzlXYZUjsY3sJkZrpXK0kywZ+Hbs24tA8u/1KzQ==
@@ -5250,7 +5250,7 @@ react@^0.0.0-experimental-33c3af284:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-reactfire@^2.0.3:
+reactfire@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/reactfire/-/reactfire-2.0.3.tgz#5e791d786768d0134dc416ac912a5134c00d90ff"
   integrity sha512-9QH2iUUPo5QUe8NJtKotBCztxDB7vGWfa7ldsWc9XswZ24YfDcLDZRdjjzb44BLqjqopNxK1ysrsQ08fuDS21w==
