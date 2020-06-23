@@ -1,26 +1,30 @@
-import { Suspense } from 'react'
+import { Suspense, useEffect } from 'react'
+import { ThemeProvider } from '@material-ui/core/styles'
+import CssBaseline from '@material-ui/core/CssBaseline'
 import { FirebaseAppProvider } from 'reactfire'
 import firebaseConfig from '../firebaseConfig'
+import { theme } from '../src/theme'
+
 function MyApp ({ Component, pageProps }) {
+  useEffect(() => {
+    const jssStyles = document.querySelector('#jss-server-side')
+    if (jssStyles) {
+      jssStyles.parentElement.removeChild(jssStyles)
+    }
+  }, [])
   return (
     <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-      <Suspense fallback="Loading">
-        <Component {...pageProps} />
-        <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
+      <ThemeProvider theme={theme}>
+        <Suspense fallback="Loading">
+          <CssBaseline />
+          <Component {...pageProps} />
+          <style jsx global>{`
         * {
           box-sizing: border-box;
         }
       `}</style>
-      </Suspense>
+        </Suspense>
+      </ThemeProvider>
     </FirebaseAppProvider>
   )
 }
