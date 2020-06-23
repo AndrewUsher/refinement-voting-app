@@ -1,3 +1,4 @@
+import { Grid, Typography } from '@material-ui/core'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useFirestore, useFirestoreDocData } from 'reactfire'
@@ -16,12 +17,10 @@ export default function Home () {
   const store = useFirestore()
   const ticket = store.collection('votes').doc(id)
   const ticketData = useFirestoreDocData(ticket)
-  console.log(ticketData)
+
   const totalVotes = Object.values(ticketData).reduce((votes, currentTotal) => {
-    console.log(ticketData)
     return currentTotal + votes
   })
-  console.log(totalVotes)
 
   return (
     <div className="container">
@@ -30,7 +29,9 @@ export default function Home () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Results for {id}</h1>
+        <Typography variant="h4" gutterBottom>
+          Results for {id}
+        </Typography>
         {options.map(option => {
           if (!ticketData[option]) return null
           const votePercentage = `${Math.round(ticketData[option] / totalVotes * 100)}%`
@@ -38,10 +39,12 @@ export default function Home () {
             <div key={option} className={`option option-${option}`} style={{
               width: votePercentage
             }}>
-              <span className="option-value">{option}</span>
-              <span className="option-percentage">
-                {votePercentage}
-              </span>
+              <Grid container justify="space-between" alignItems="center">
+                <Typography variant="body1">{option}</Typography>
+                <Typography variant="body1">
+                  {votePercentage} ({ticketData[option]})
+                </Typography>
+              </Grid>
             </div>
           )
         })}
@@ -49,7 +52,7 @@ export default function Home () {
       <style jsx>{`
         @keyframes moveOption {
           from {
-            transform: scaleX(0.3)
+            transform: scaleX(0.3);
           }
 
           to {
