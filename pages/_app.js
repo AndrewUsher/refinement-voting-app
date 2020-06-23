@@ -19,6 +19,11 @@ function MyApp ({ Component, pageProps }) {
           <CssBaseline />
           <Component {...pageProps} />
           <style jsx global>{`
+        body {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+        
         * {
           box-sizing: border-box;
         }
