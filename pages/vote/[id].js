@@ -1,3 +1,4 @@
+import { Button, ButtonGroup, Container, Typography } from '@material-ui/core'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import firebase from 'firebase'
@@ -23,7 +24,7 @@ export default function Home () {
       merge: true
     }
     )
-    // router.push(`/results/${id}`)
+    router.push(`/results/${id}`)
   }
   return (
     <div className="container">
@@ -31,14 +32,18 @@ export default function Home () {
         <title>Vote for {id}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1>What is the size for {id}?</h1>
-        <div className="button-container">
+      <Container>
+        <Typography variant="h4" gutterBottom>
+          What is the size for {id}?
+        </Typography>
+        <ButtonGroup variant="contained" color="primary" size="large">
           {options.map(option => (
-            <button key={option} onClick={handleVote(option)}>{option}</button>
+            <Button key={option} onClick={handleVote(option)}>
+              {option}
+            </Button>
           ))}
-        </div>
-      </main>
+        </ButtonGroup>
+      </Container>
     </div>
   )
 }
