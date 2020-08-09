@@ -17,6 +17,6 @@
     "reactfire": "2.0.3"
   },
   "devDependencies": {
-    "@drewster/eslint-config": "1.0.2"
+    "@drewster/eslint-config": "2.0.0"
   }
 }
