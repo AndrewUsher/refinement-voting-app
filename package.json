@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@material-ui/core": "4.11.0",
+    "@material-ui/core": "4.11.4",
     "global-agent": "2.1.12",
     "firebase": "7.24.0",
     "next": "9.5.4",
