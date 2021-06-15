@@ -10,7 +10,7 @@
   "dependencies": {
     "@material-ui/core": "4.11.0",
     "global-agent": "2.1.12",
-    "firebase": "7.24.0",
+    "firebase": "8.6.7",
     "next": "9.5.4",
     "react": "0.0.0-experimental-33c3af284",
     "react-dom": "0.0.0-experimental-33c3af284",
